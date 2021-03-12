@@ -1,0 +1,312 @@
+.g_title {
+  color: #141414;
+  font-size: 36px;
+  text-align: center;
+  padding: 50px 0;
+}
+.g_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 100;
+}
+.g_header .h_l {
+  float: left;
+}
+.g_header .h_l a {
+  color: #fff;
+  display: block;
+}
+.g_header .h_l a > img {
+  width: 94px;
+  height: 45px;
+  float: left;
+}
+.g_header .h_l a .r {
+  float: left;
+  margin-left: 10px;
+}
+.g_header .h_l a .r b {
+  font-size: 16px;
+}
+.g_header .h_l a .r p {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.g_header .h_c {
+  float: left;
+  padding-left: 30px;
+  padding-top: 16px;
+}
+.g_header .h_c li {
+  float: left;
+}
+.g_header .h_c li a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.g_header .h_r {
+  float: right;
+  cursor: pointer;
+}
+.g_header .h_r .sc {
+  float: left;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1859);
+  position: relative;
+}
+.g_header .h_r .sc input {
+  outline: none;
+  border: none;
+  background: none;
+  display: inline-block;
+  width: 150px;
+}
+.g_header .h_r .sc input::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+.g_header .h_r .sc img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 20px;
+}
+.g_header .h_r .btns {
+  float: left;
+  padding-top: 10px;
+}
+.g_header .h_r .btns span {
+  padding: 5px 15px;
+  display: inline-block;
+}
+.g_header .h_r .btns span:last-child {
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+.index {
+  padding-bottom: 100vh;
+}
+.index .banner {
+  position: relative;
+}
+.index .banner > img {
+  display: block;
+  height: 60vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.index .banner > p {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-size: 50px;
+  color: #fff;
+}
+.index .banner .tabs {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(238, 238, 238, 0) 0%, #000000 100%);
+}
+.index .banner .tabs ul {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.index .banner .tabs li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.index .banner .tabs li img {
+  display: inline-block;
+  height: 42px;
+}
+.index .banner .tabs li .r {
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+  color: #fff;
+}
+.index .banner .tabs li .r p {
+  font-size: 18px;
+}
+.index .banner .tabs li .r i {
+  font-size: 28px;
+  color: #01C4FC;
+}
+.index .nums {
+  background-color: #EDF2F8;
+}
+.index .nums > div > img {
+  width: 25px;
+  height: 23px;
+  float: left;
+}
+.index .nums .lists {
+  width: 100%;
+  padding-left: 70px;
+}
+.index .nums .lists > li {
+  float: left;
+  text-align: center;
+  width: 14%;
+}
+.index .nums .lists > li i {
+  display: inline-block;
+  text-align: left;
+  color: #4F6279;
+  font-weight: 600;
+  font-size: 14px;
+  float: left;
+  position: relative;
+  top: 5px;
+}
+.index .nums .lists > li ul {
+  float: left;
+  padding: 0 5px;
+  display: inline-block;
+}
+.index .nums .lists > li ul li {
+  display: inline-block;
+  background-color: #1B5CFF;
+  color: #fff;
+  font-size: 22px;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.index .nums .lists > li:nth-child(6) i,
+.index .nums .lists > li:nth-child(7) i {
+  top: 0;
+}
+.index .zhuanlan {
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.index .zhuanlan .bgs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.index .zhuanlan .bgs li {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+.index .zhuanlan .bgs li:nth-child(2) {
+  left: -3%;
+  top: auto;
+  bottom: -40%;
+}
+.index .zhuanlan .bgs li:nth-child(3) {
+  left: auto;
+  right: -2%;
+  top: 0;
+  width: 300px;
+  height: 300px;
+}
+.index .zhuanlan .lists {
+  position: relative;
+  z-index: 100;
+}
+.index .zhuanlan .lists > li {
+  float: left;
+  width: 32%;
+}
+.index .zhuanlan .lists > li .ti {
+  margin-bottom: 10px;
+}
+.index .zhuanlan .lists > li .ti b {
+  font-size: 20px;
+  color: #141414;
+}
+.index .zhuanlan .lists > li .ti span {
+  padding-top: 5px;
+  float: right;
+  color: #1B5CFF;
+  cursor: pointer;
+}
+.index .zhuanlan .lists > li li {
+  padding: 10px 0;
+  color: #95979B;
+  overflow: hidden;
+  border-bottom: 1px solid #DADADA;
+}
+.index .zhuanlan .lists > li li i {
+  float: right;
+}
+.index .zhuanlan .lists > li li span {
+  display: inline-block;
+  width: 75%;
+}
+.index .zhuanlan .lists > li:nth-child(2) {
+  margin: 0 2%;
+}
+.index .zhuanlan .lists .imgs li {
+  border: none;
+}
+.index .zhuanlan .lists .imgs li img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+}
+.index .qiye {
+  padding-bottom: 50px;
+  background-color: #161D2B;
+}
+.index .qiye .g_title {
+  color: #fff;
+}
+.index .qiye ul li {
+  float: left;
+  width: 30%;
+  transition: all 0.5s;
+  position: relative;
+}
+.index .qiye ul li > img {
+  display: block;
+  width: 100%;
+  height: 630px;
+}
+.index .qiye ul li .cc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding-top: 200px;
+  text-align: center;
+  background: linear-gradient(360deg, #1D5CF6 0%, rgba(255, 255, 255, 0.51) 100%);
+}
+.index .qiye ul li .cc img {
+  height: 100px;
+}
+.index .qiye ul li .cc p {
+  color: #fff;
+  padding-top: 20px;
+  font-size: 22px;
+}
+.index .qiye ul .active {
+  width: 40%;
+}
+.index .qiye ul .active .cc {
+  padding-top: 100px;
+  background: linear-gradient(to bottom, #1D5CF6 0%, rgba(255, 255, 255, 0.51) 100%);
+}

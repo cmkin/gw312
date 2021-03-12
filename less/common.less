@@ -1,0 +1,114 @@
+//颜色部分
+
+@blues:#1B5CFF;
+@blueq:#01C4FC;
+
+
+
+
+//公用class
+.g_title{
+	color: #141414;
+	font-size: 36px;
+	text-align: center;
+	padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//公用模板部分
+.g_header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	z-index: 100;
+	.h_l{
+		float: left;
+		a{
+			color: #fff;
+			display: block;
+			&>img{
+				width: 94px;
+				height: 45px;
+				float: left;
+			}
+			.r{
+				float: left;
+				margin-left: 10px;
+				b{
+					font-size: 16px;
+				}
+				p{
+					font-size: 12px;
+					opacity: 0.6;
+				}
+			}
+		}
+		
+	}
+	.h_c{
+		float: left;
+		padding-left: 30px;
+		padding-top: 16px;
+		li{
+			float: left;
+			a{
+				display: block;
+				color: #fff;
+				font-size: 16px;
+				padding: 0 20px;
+			}
+		}
+	}
+	.h_r{
+	  float: right;
+	  cursor: pointer;
+	  .sc{
+		 float: left;
+		 padding: 15px;
+		 background: rgba(255,255,255,0.1859); 
+		 position: relative;
+		 input{
+			 outline: none;
+			 border: none;
+			 background: none;
+			 display: inline-block;
+			 width: 150px;
+		 }
+		 input::placeholder{
+			 color: #fff;
+			 font-size: 16px;
+		 }
+		 img{
+			 position: absolute;
+			 width: 15px;
+			 height: 15px;
+			 right: 20px;
+		 }
+	  }
+	  .btns{
+		  float: left;
+		  padding-top: 10px;
+		  span{
+			  padding:5px 15px;
+			  display: inline-block;
+		  }
+		  span:last-child{
+			  border: 1px solid #fff;
+			  border-radius: 2px;
+		  }
+	  }
+	}
+}

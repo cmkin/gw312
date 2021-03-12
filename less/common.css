@@ -1,0 +1,90 @@
+.g_title {
+  color: #141414;
+  font-size: 36px;
+  text-align: center;
+  padding: 50px 0;
+}
+.g_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 100;
+}
+.g_header .h_l {
+  float: left;
+}
+.g_header .h_l a {
+  color: #fff;
+  display: block;
+}
+.g_header .h_l a > img {
+  width: 94px;
+  height: 45px;
+  float: left;
+}
+.g_header .h_l a .r {
+  float: left;
+  margin-left: 10px;
+}
+.g_header .h_l a .r b {
+  font-size: 16px;
+}
+.g_header .h_l a .r p {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.g_header .h_c {
+  float: left;
+  padding-left: 30px;
+  padding-top: 16px;
+}
+.g_header .h_c li {
+  float: left;
+}
+.g_header .h_c li a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.g_header .h_r {
+  float: right;
+  cursor: pointer;
+}
+.g_header .h_r .sc {
+  float: left;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1859);
+  position: relative;
+}
+.g_header .h_r .sc input {
+  outline: none;
+  border: none;
+  background: none;
+  display: inline-block;
+  width: 150px;
+}
+.g_header .h_r .sc input::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+.g_header .h_r .sc img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 20px;
+}
+.g_header .h_r .btns {
+  float: left;
+  padding-top: 10px;
+}
+.g_header .h_r .btns span {
+  padding: 5px 15px;
+  display: inline-block;
+}
+.g_header .h_r .btns span:last-child {
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
