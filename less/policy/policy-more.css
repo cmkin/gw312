@@ -33,7 +33,7 @@
   float: right;
 }
 .g_fonter .top .r img {
-  height: 60px;
+  height: 40px;
 }
 .g_fonter .bottom {
   background-color: #000;
@@ -135,7 +135,7 @@
 }
 .g_header .h_c {
   float: left;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-top: 16px;
 }
 .g_header .h_c li {
@@ -165,7 +165,7 @@
   border: none;
   background: none;
   display: inline-block;
-  width: 130px;
+  width: 150px;
   color: #fff;
 }
 .g_header .h_r .sc input::placeholder {
@@ -189,4 +189,42 @@
 .g_header .h_r .btns span:last-child {
   border: 1px solid #fff;
   border-radius: 2px;
+}
+.policy-more {
+  min-height: 100%;
+  background-color: #fff;
+}
+.policy-more .lists {
+  margin-bottom: 40px;
+}
+.policy-more .lists li {
+  padding: 10px;
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+}
+.policy-more .lists li .r {
+  padding: 30px 0;
+}
+.policy-more .lists li .r > b {
+  font-size: 24px;
+  color: #474545;
+  padding: 10px 0;
+  display: block;
+}
+.policy-more .lists li .r > p {
+  font-size: 18px;
+}
+.policy-more .lists li .r > div {
+  padding-top: 20px;
+  font-size: 18px;
+}
+.policy-more .lists li .r > div span {
+  display: inline-block;
+  margin-right: 50px;
+}
+.policy-more .lists li .r > div span:last-child {
+  text-align: right;
+}
+.policy-more .lists li .r > div span:nth-child(2) {
+  text-align: center;
 }

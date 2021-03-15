@@ -33,7 +33,7 @@
   float: right;
 }
 .g_fonter .top .r img {
-  height: 60px;
+  height: 40px;
 }
 .g_fonter .bottom {
   background-color: #000;
@@ -135,7 +135,7 @@
 }
 .g_header .h_c {
   float: left;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-top: 16px;
 }
 .g_header .h_c li {
@@ -165,7 +165,7 @@
   border: none;
   background: none;
   display: inline-block;
-  width: 130px;
+  width: 150px;
   color: #fff;
 }
 .g_header .h_r .sc input::placeholder {
@@ -189,4 +189,104 @@
 .g_header .h_r .btns span:last-child {
   border: 1px solid #fff;
   border-radius: 2px;
+}
+.policy {
+  min-height: 100%;
+  background-color: #FFFFFF;
+}
+.policy .zc .left {
+  float: left;
+  width: 75%;
+}
+.policy .zc .left li {
+  margin-bottom: 40px;
+  padding: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 22px 0px rgba(0, 0, 0, 0.08);
+}
+.policy .zc .left li > img {
+  width: 390px;
+  height: 260px;
+  float: left;
+  margin-right: 20px;
+}
+.policy .zc .left li .r {
+  padding: 30px 0;
+}
+.policy .zc .left li .r > b {
+  font-size: 24px;
+  color: #474545;
+  padding: 10px 0;
+  display: block;
+}
+.policy .zc .left li .r > p {
+  font-size: 18px;
+}
+.policy .zc .left li .r > div {
+  padding-top: 20px;
+  font-size: 18px;
+  display: flex;
+}
+.policy .zc .left li .r > div span {
+  flex: 1;
+}
+.policy .zc .left li .r > div span:last-child {
+  text-align: right;
+}
+.policy .zc .left li .r > div span:nth-child(2) {
+  text-align: center;
+}
+.policy .zc .right {
+  float: left;
+  width: 25%;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.policy .zc .right .t {
+  padding-bottom: 20px;
+}
+.policy .zc .right .t span {
+  font-size: 16px;
+  color: #888282;
+}
+.policy .zc .right .t a {
+  float: right;
+  color: #FF5C5C;
+  font-size: 16px;
+}
+.policy .zc .right .lis {
+  padding-left: 20px;
+  border-left: 1px solid rgba(151, 151, 151, 0.5);
+}
+.policy .zc .right .lis li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.policy .zc .right .lis li b {
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FF5C5C;
+}
+.policy .zc .right .lis li span {
+  display: block;
+  color: #474545;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.policy .zc .right .lis li i {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  color: #ADADAD;
+}
+.policy .zc .right .imgs {
+  padding-top: 20px;
+}
+.policy .zc .right .imgs img {
+  display: block;
+  margin-bottom: 10px;
 }

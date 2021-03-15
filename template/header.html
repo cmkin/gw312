@@ -12,13 +12,16 @@
 		<div class="h_c">
 			<ul class="clearfix">
 				<li>
-					<a href="">政策专栏</a>
+					<a  href="policy.html">政策专栏</a>
 				</li>
 				<li>
-					<a href="">企业融通</a>
+					<a  href="accommodation.html">企业融通</a>
 				</li>
 				<li>
-					<a href="">产业联盟</a>
+					<a href="union.html">产业联盟</a>
+				</li>
+				<li>
+					<a href="">载体服务</a>
 				</li>
 				<li>
 					<a href="">一站服务</a>
@@ -50,5 +53,27 @@
 	</div>
 </div>
 <script type="text/javascript">
+	$(".g_header .h_c li a").removeClass("active")
+	$(".g_header .h_c li a").each(function(index,item){
+		if($(item).attr("href") && location.href.indexOf($(item).attr("href"))!=-1){
+			$(item).addClass("active")
+		}
+		
+	})
 	
+	
+	
+	if($(window).scrollTop()>=90){
+		$(".g_header").css("background","#1B5CFF")
+	}else{
+		$(".g_header").css("background","none")
+	}
+	$(window).scroll(function(){
+		if($(window).scrollTop()>=90){
+			$(".g_header").css("background","#1B5CFF")
+		}else{
+			$(".g_header").css("background","none")
+		}
+		
+	})
 </script>
