@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>载体服务</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="less/index/index-carrier.css"/>
+		<script src="js/ie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jq-2.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="index-carrier">
+			<div id="header"></div>
+			
+			<div class="main">
+				<div class="global_main" id="canvasWrap">
+					<canvas id="myCanvas" ></canvas>
+					<div class="card">
+						<b>瑞普生物智创谷</b>
+						<p>文字信息文字信息文字信息文字信息文字信息 文字信息文字信息文字信息文字信息文字信息 文字信息文字信息文字信息文字信息文字信息 文字信息</p>
+						<div class="imgs clearfix">
+							<img src="images/index/jj.jpg" >
+							<img src="images/index/jj.jpg" >
+							<img src="images/index/jj.jpg" >
+							<img src="images/index/jj.jpg" >
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="fonter"></div>
+			
+			<script type="text/javascript" charset="UTF-8">
+				$("#header").load("./template/header.html")
+				$("#fonter").load("./template/fonter.html")
+				
+				//canvas
+				
+				var c=document.getElementById("myCanvas");
+				var width =  $(c).width()
+				var height =  $(c).height()
+					c.width = width
+					c.height = height
+				var ctx=c.getContext("2d");
+				
+				var img = new Image()
+					img.src = "images/car/dq.png"
+					img.onload=function(){
+						
+						
+						
+						ctx.strokeStyle  = "rgba(8, 234, 193, 0.5)"
+						 // 设置透明度值
+						 
+						
+						// 画半透明圆
+						  for (var i=2;i<7;i++){
+								ctx.beginPath();
+								ctx.arc(width/2-40,height/2+20,50*i,0,Math.PI*2,true);
+								ctx.stroke(); 
+						  }
+						  //外围宽 420 - 1000 ，外围高 120 - 680
+						 
+						 function RandomNumBoth(Min,Max){
+						 
+						       var Range = Max - Min;
+						 
+						       var Rand = Math.random();
+						 
+						       var num = Min + Math.round(Rand * Range); //四舍五入
+						 
+						       return num;
+						 
+						 }
+						 //线条
+						 var lineList=[]
+						 for(var i = 0;i<=8;i++){
+								ctx.beginPath();
+								var x = RandomNumBoth(420,1000)
+								var y = RandomNumBoth(120,680)
+								lineList.push([x,y])
+								ctx.moveTo (x,y); 
+								ctx.lineTo (width/2-40,height/2+20);       //设置末端状态
+								ctx.lineWidth = 2;          //设置线宽状态
+								ctx.strokeStyle = 'rgba(8, 234, 193, 0.8)';  //设置线的颜色状态
+								ctx.stroke();    	
+						 }
+						 ctx.clearRect(width/2-75,height/2-20,80,80);
+						//背景
+						ctx.drawImage(img,width/2-150+10,height/2-150,240,270);
+						  
+						 
+						 //正中间文字
+						  
+						  ctx.font = "16px '微软雅黑'";
+						   ctx.fillStyle = "rgba(255,255,255,0.5)";    
+						  ctx.textAlign = 'center'; 
+						  ctx.fillText( "公司名称", width/2-40, height/2+30 ); 
+						  
+						//绘制圆球
+						  
+						   var doms = ''
+						  for(var i in lineList){
+							    doms = ''
+								doms = "<div index='"+ i +"' class='qiu' style='left:"+(lineList[i][0]-20)+"px;top:"+(lineList[i][1]-20)+"px;'>"
+								doms+='<span>公司名称</span>'
+								doms+='<i></i>'
+								doms+="</div>"
+							  $("#canvasWrap").append(doms)
+						  }
+						  
+						   $("#canvasWrap .qiu").click(function(){
+							   var index = $(this).attr("index")
+									
+							   $("#canvasWrap .card").css({
+								   left:lineList[index][0]+'px',
+								   top:lineList[index][1]+50+'px',
+							   }).fadeIn()
+						   })
+						    $("#canvasWrap .card").click(function(){
+								 $("#canvasWrap .card").fadeOut()
+							})
+
+					}
+				
+				/* ctx.fillStyle = "red"
+				ctx.strokeStyle  = "red"
+				ctx.beginPath();
+				ctx.arc(95,50,40,0,2*Math.PI);
+				ctx.stroke(); */
+				
+				
+				
+				
+			</script>
+		</div>
+	</body>
+</html>

@@ -33,7 +33,7 @@
   float: right;
 }
 .g_fonter .top .r img {
-  height: 40px;
+  height: 60px;
 }
 .g_fonter .bottom {
   background-color: #000;
@@ -135,7 +135,7 @@
 }
 .g_header .h_c {
   float: left;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-top: 16px;
 }
 .g_header .h_c li {
@@ -165,7 +165,7 @@
   border: none;
   background: none;
   display: inline-block;
-  width: 150px;
+  width: 130px;
   color: #fff;
 }
 .g_header .h_r .sc input::placeholder {

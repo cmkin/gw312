@@ -135,7 +135,7 @@
 }
 .g_header .h_c {
   float: left;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-top: 16px;
 }
 .g_header .h_c li {
@@ -165,7 +165,7 @@
   border: none;
   background: none;
   display: inline-block;
-  width: 150px;
+  width: 130px;
   color: #fff;
 }
 .g_header .h_r .sc input::placeholder {
@@ -565,6 +565,7 @@
   position: relative;
 }
 .index .zhaiti .cc_wrap .right li {
+  cursor: pointer;
   width: 390px;
   padding: 30px;
   padding-top: 20px;
@@ -684,12 +685,13 @@
   border: none;
 }
 .index .jinrong .yh {
-  padding: 50px 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 124px;
+  background-color: #fff;
 }
 .index .jinrong .yh img {
   display: block;
-  width: 100%;
-  height: 124px;
 }
 .index .zhaocai_warp {
   background: url(../../images/bgs/6.png) no-repeat 0 0;

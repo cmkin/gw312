@@ -190,3 +190,13 @@
   border: 1px solid #fff;
   border-radius: 2px;
 }
+.g_titles {
+  font-size: 16px;
+  color: #908A8A;
+}
+.g_titles span {
+  cursor: pointer;
+}
+.g_titles .active {
+  color: #3770FE;
+}
